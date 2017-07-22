@@ -7,7 +7,6 @@
     "build": "node ./build/slotValueGen.js && sh ./build/build.sh",
     "lint": "eslint index.js src",
     "lint:fix": "eslint index.js src --fix",
-    "start": "alexa-skill-test",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,7 +14,10 @@
     "url": "git+https://github.com/gyandeeps/eslint-alexa.git"
   },
   "keywords": [
-    "eslint"
+    "eslint",
+    "alexa",
+    "skill",
+    "aws"
   ],
   "author": "Gyandeep Singh <gyandeeps@gmail.com>",
   "license": "MIT",
@@ -30,5 +32,8 @@
   },
   "dependencies": {
     "alexa-sdk": "^1.0.11"
+  },
+  "engines": {
+    "node": ">=6.9"
   }
 }
