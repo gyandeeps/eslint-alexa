@@ -1,0 +1,34 @@
+{
+  "name": "eslint-alexa",
+  "version": "1.0.0",
+  "description": "Alexa skill for ESLint",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./build/slotValueGen.js && sh ./build/build.sh",
+    "lint": "eslint index.js src",
+    "lint:fix": "eslint index.js src --fix",
+    "start": "alexa-skill-test",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyandeeps/eslint-alexa.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "Gyandeep Singh <gyandeeps@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gyandeeps/eslint-alexa/issues"
+  },
+  "homepage": "https://github.com/gyandeeps/eslint-alexa#readme",
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.7.0"
+  },
+  "dependencies": {
+    "alexa-sdk": "^1.0.11"
+  }
+}

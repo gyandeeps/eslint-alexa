@@ -1,0 +1,10 @@
+RuleIntent {Description} please
+RuleIntent please {Description}
+RuleIntent {Description}
+AMAZON.StopIntent stop
+AMAZON.StopIntent off
+AMAZON.StopIntent shut up
+AMAZON.StartOverIntent start over
+AMAZON.StartOverIntent restart
+AMAZON.StartOverIntent start again
+AMAZON.StartOverIntent play again
