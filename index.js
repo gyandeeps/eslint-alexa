@@ -44,6 +44,7 @@ const commonHandlers = {
     },
     Unhandled() {
         console.log("***************************  unhandled  **********************************************");
+        this.handler.state = states.STARTMODE;
         this.emit(":ask", promptToStartMessage, promptToStartMessage);
     }
 };
